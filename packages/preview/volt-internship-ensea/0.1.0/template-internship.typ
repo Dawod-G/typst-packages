@@ -15,7 +15,6 @@
   enableListOfFigures: true,
   enableListOfTables: false,
   enableListOfAppendices: false,
-  enableGlossary: false,
   enableBibliography: true,
   enableAppendices: true,
   body,
