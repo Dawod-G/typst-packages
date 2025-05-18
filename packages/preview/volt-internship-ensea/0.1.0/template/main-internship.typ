@@ -1,7 +1,4 @@
-#import "@preview/glossy:0.8.0": *
-#show: init-glossary.with(yaml("glossary.yaml"))
-
-#import "../template-internship.typ": *
+#import "@preview/volt-internship-ensea:0.1.0": *
 
 // ============================
 // VARIABLES TO MODIFY
@@ -42,8 +39,6 @@
   enableListOfTables: true,
   // Enable the list of appendices
   enableListOfAppendices: true,
-  // Enable the glossary section
-  enableGlossary: true,
   // Enable the bibliography
   enableBibliography: true,
   // Enable the appendix section
@@ -84,20 +79,6 @@
 == Une citation pour illustrer la "Bibliographie"
 Dans le traité "*Philosophiæ Naturalis Principia Mathematica*" @newton1833philosophiae, Newton énonce ses célèbres lois du mouvement et la loi de la gravitation universelle, posant ainsi les bases de la mécanique classique.
 
-== Une référence pour illustrer le "Glossaire"
-L'@ENSEA est une école d'ingénieurs française, accréditée à délivrer le diplôme d'ingénieur.
-
-Établissement généraliste et public, situé à Cergy (Val-d'Oise), elle est placé sous la tutelle du ministère de l'Enseignement supérieur et de la Recherche.
-
-Depuis 1952, elle forme des ingénieurs en électronique, informatique et télécommunications.
-
-Reconnue pour son ouverture sociale, l'@ENSEA recrute ses étudiants-ingénieurs via :
-- le cycle préparatoire (concours commun Centrale-Supélec et concours Arts et Métiers)
-- les concours ATS
-- la banque d'épreuves DUT-BUT/BTS
-- le Pass'Ingénieur
-- la sélection sur dossier
-
 // Insert a page break
 #pagebreak()
 
@@ -113,9 +94,9 @@ Reconnue pour son ouverture sociale, l'@ENSEA recrute ses étudiants-ingénieurs
 ```java
 // HelloWorld.java
 public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
+public static void main(String[] args) {
+System.out.println("Hello, World!");
+}
 }
 ```
 

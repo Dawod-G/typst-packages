@@ -1,8 +1,5 @@
 // edited on 18/05/2025
 
-#import "@preview/glossy:0.8.0": *
-#import "@preview/hydra:0.6.1": anchor, hydra
-
 // ============================
 // CONFIGURATION
 // ============================
@@ -197,9 +194,6 @@
     header-ascent: 10pt,
     footer-descent: 10pt,
     header: context [
-      // to use #hydra outside of the page header, an #anchor must be placed
-      #anchor(),
-
       #stack(
         dir: ltr,
 
@@ -239,7 +233,9 @@
 
         align(left + top)[#text(size: 10pt)[
             #box(width: 85%)[
-              #emph(hydra(1))
+              *École Nationale Supérieure de l’Électronique et de ses Applications* #linebreak()
+              6, avenue du Ponceau • CS20707 Cergy • 95014 Cergy-Pontoise Cedex • France #linebreak()
+              #link("tel:+33130736666")[+33 (0)1 30 73 66 66] • #link("www.ensea.fr")[www.ensea.fr]
             ]
           ]],
 
@@ -327,82 +323,6 @@
   set page(numbering: "1/1")
 
   body
-
-  // Glossary configuration
-  let my-theme = (
-    // Renders the main glossary section as a single column
-    // Parameters:
-    //   title: The glossary section title
-    //   body: Content containing all groups and entries
-    section: (title, body) => {
-      heading(level: 1, title)
-      body
-    },
-    // Renders a group of related glossary terms
-    // Parameters:
-    //   name: Group name (empty string for ungrouped terms)
-    //   index: Zero-based group index
-    //   total: Total number of groups
-    //   body: Content containing the group's entries
-    group: (name, index, total, body) => {
-      if name != "" and total > 1 {
-        heading(level: 2, name)
-      }
-      body
-    },
-    // Renders a single glossary entry with term, definition, and page references
-    // Parameters:
-    //   entry: Dictionary containing term data:
-    //     - short: Short form of term
-    //     - long: Long form of term (optional)
-    //     - description: Term description (optional)
-    //     - label: Term's dictionary label
-    //     - pages: Linked page numbers where term appears
-    //   index: Zero-based entry index within group
-    //   total: Total entries in group
-    entry: (entry, index, total) => {
-      // Format the term parts
-      let term = text(entry.short, weight: "bold")
-
-      // Optional long form
-      let long-form = if entry.long == none {
-        []
-      } else {
-        [#text(" (" + entry.long + ")")]
-      }
-
-      // Optional description
-      let description = if entry.description == none {
-        []
-      } else {
-        [: #entry.description]
-      }
-
-      // Optional pages (always plural in French example)
-      let pages = if entry.pages == none {
-        []
-      } else {
-        [#text(" (pp. " + entry.pages + ")")]
-      }
-
-      // Create the complete entry with hanging indent
-      block(spacing: 0.5em, pad(
-        left: 1em,
-        bottom: 0.5em,
-        block([#term#entry.label#long-form#description #h(1em) #pages]),
-      ))
-    },
-  )
-
-  if (enableGlossary) {
-    pagebreak()
-    glossary(
-      title: "Glossaire",
-      theme: my-theme,
-      sort: true,
-      ignore-case: false,
-    )
-  }
 
   // Bibliography configuration
   if (enableBibliography) {
