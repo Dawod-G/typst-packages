@@ -1,0 +1,15 @@
+[package]
+name = "volt-internship-ensea"
+version = "0.1.0"
+entrypoint = "template-internship.typ"
+authors = ["Dawod-G"]
+license = "MIT"
+description = "Unofficial Typst template for internship reports at ENSEA, a French engineering school."
+repository = "https://github.com/Dawod-G/ENSEA_Typst-Template"
+keywords = ["ensea", "school", "engineering", "report"]
+categories = ["report"]
+
+[template]
+path = "template"
+entrypoint = "main-internship.typ"
+thumbnail = "thumbnail-internship-1.png"
