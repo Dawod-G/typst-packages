@@ -94,9 +94,9 @@ Dans le traité "*Philosophiæ Naturalis Principia Mathematica*" @newton1833phil
 ```java
 // HelloWorld.java
 public class HelloWorld {
-public static void main(String[] args) {
-System.out.println("Hello, World!");
-}
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
 }
 ```
 

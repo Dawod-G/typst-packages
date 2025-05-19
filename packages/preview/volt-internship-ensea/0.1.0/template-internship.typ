@@ -1,4 +1,4 @@
-// edited on 18/05/2025
+// edited on 19/05/2025
 
 // ============================
 // CONFIGURATION
@@ -50,32 +50,26 @@
     )
   }
 
-  // Set the document's basic properties.
   set document(author: authors, title: title)
 
-  // Set the page properties
   set page(paper: "a4", margin: auto, number-align: center)
 
   // if "weak: true", the page break is skipped if the current page is already empty
   set pagebreak(weak: true)
 
-  // Set the text properties
   set text(font: "New Computer Modern", size: 12pt, lang: "fr", region: "fr")
   // for English: lang: 'en' and region: 'us'
   // For other languages/regions, refer to this page:
   // lang: https://en.wikipedia.org/wiki/ISO_639
   // region: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-  // Set the heading properties
   set heading(numbering: "I.1.a)")
 
-  // config. of the spacing after headings
+  // Config. of the spacing after headings
   show heading.where(level: 1): set block(spacing: 1em)
 
-  // Set the list properties
   set list(indent: 15pt, marker: [--]) // config. of lists
 
-  // Set the equation numbering
   set math.equation(numbering: "(1)")
 
   show figure.where(kind: image): set figure(supplement: "Figure")
@@ -187,9 +181,7 @@
   pagebreak()
   // Definition of the following pages with different margins
   set page(
-    // IS alternateFooter 100pt
-    // IS NOT alternateFooter 150pt
-    margin: (top: 80pt, bottom: 1.5cm),
+    margin: (top: 80pt, bottom: 2.5cm),
     header-ascent: 10pt,
     footer-descent: 10pt,
     header: context [
@@ -216,17 +208,6 @@
     footer: context [
       #place(top + left, dy: -10pt, box(width: 100%, height: 1pt, fill: black))
 
-      // IS NOT alternateFooter
-      // #align(
-      //   right + horizon,
-      // )[*École Nationale Supérieure de l’Électronique et de ses Applications* #linebreak()
-      //   6, avenue du Ponceau • CS20707 Cergy • 95014 Cergy-Pontoise Cedex • France #linebreak()
-      //   #link("tel:+33130736666")[+33 (0)1 30 73 66 66] • #link("www.ensea.fr")[www.ensea.fr]]
-
-      // #set align(center + horizon)
-      // #counter(page).display("— 1/1 —", both: true)
-
-      // IS alternateFooter
       #stack(
         dir: ltr,
 

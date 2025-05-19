@@ -74,6 +74,7 @@ typst init volt-internship-ensea
 <p align="center">
     <img src="thumbnail-internship-4.png" style="width: 65%">
 </p>
+
 ## License
 
 The Typst template is licensed under the [MIT license](https://github.com/Dawod-G/ENSEA_Typst-Template/blob/master/LICENSE.md). This license does not apply to the ENSEA logo or associated image files, which remain the property of ENSEA.
