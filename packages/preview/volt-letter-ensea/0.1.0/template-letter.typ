@@ -34,6 +34,8 @@
   lang: https://en.wikipedia.org/wiki/ISO_639
   region: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 */
 
+  show heading : set text(hyphenate: false)
+
   // Config. of the spacing after headings
   show heading.where(level: 1): set block(spacing: 1em)
 

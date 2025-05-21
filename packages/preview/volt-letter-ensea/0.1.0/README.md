@@ -41,7 +41,7 @@ All fields listed above are **optional**.
 ```
 
 <p align="center">
-    <img src="thumbnail-letter.png" style="width: 65%">
+<img src="thumbnail-letter.png" style="width: 65%">
 </p>
 
 ## License
