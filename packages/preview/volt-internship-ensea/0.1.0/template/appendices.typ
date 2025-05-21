@@ -54,7 +54,7 @@
     // START HERE
     // ============================
 
-    #heading(level: 1)[Logo de l'ENSEA (encore)]<ann1>
+    #heading(level: 1)[Logo de l'ENSEA (encore)]
     #figure(
       image("media/logo-ENSEA.jpg", width: 25%),
       caption: [Logo de l'ENSEA (encore)],

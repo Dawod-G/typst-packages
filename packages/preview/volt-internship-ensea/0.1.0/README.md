@@ -36,23 +36,23 @@ typst init volt-internship-ensea
 #import "@preview/volt-internship-ensea:0.1.0": *
 
 #show: lab-internship.with(
-  companyLogo: "template/media/logo.png",
-  authors: (
-    "Jean DUPONT",
-  ),
-  studentInfo: [*Élève ingénieur en X#super[ème] année* #linebreak()
-    Promotion 20XX #linebreak()
-    Année 20XX/20XX],
-  title: [#lorem(10)],
-  internshipDetails: [Stage effectué du *1er mars au 30 août 2025*, au sein de la société *TechSolutions*, située à Paris.
+companyLogo: "template/media/logo.png",
+authors: (
+"Jean DUPONT",
+),
+studentInfo: [*Élève ingénieur en X#super[ème] année* #linebreak()
+Promotion 20XX #linebreak()
+Année 20XX/20XX],
+title: [#lorem(10)],
+internshipDetails: [Stage effectué du *1er mars au 30 août 2025*, au sein de la société *TechSolutions*, située à Paris.
 
-    Sous la responsabilité de : #linebreak()
-    - M. *Pierre LEFEVRE*, Directeur de la Stratégie #linebreak()
-    - Mme *Marie DUBOIS*, Responsable des Opérations #linebreak()
-  ],
-  enableListOfFigures: false,
-  enableBibliography: false,
-  enableAppendices: false,
+Sous la responsabilité de : #linebreak()
+- M. *Pierre LEFEVRE*, Directeur de la Stratégie #linebreak()
+- Mme *Marie DUBOIS*, Responsable des Opérations #linebreak()
+],
+enableListOfFigures: false,
+enableBibliography: false,
+enableAppendices: false,
 )
 
 = Introduction
@@ -60,19 +60,19 @@ typst init volt-internship-ensea
 ```
 
 <p align="center">
-    <img src="thumbnail-internship-1.png" style="width: 65%">
+<img src="thumbnail-internship-1.png" style="width: 65%">
 </p>
 
 <p align="center">
-    <img src="thumbnail-internship-2.png" style="width: 65%">
+<img src="thumbnail-internship-2.png" style="width: 65%">
 </p>
 
 <p align="center">
-    <img src="thumbnail-internship-3.png" style="width: 65%">
+<img src="thumbnail-internship-3.png" style="width: 65%">
 </p>
 
 <p align="center">
-    <img src="thumbnail-internship-4.png" style="width: 65%">
+<img src="thumbnail-internship-4.png" style="width: 65%">
 </p>
 
 ## License

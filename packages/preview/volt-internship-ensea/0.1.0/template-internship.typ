@@ -63,7 +63,8 @@
   // lang: https://en.wikipedia.org/wiki/ISO_639
   // region: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-  set heading(numbering: "I.1.a)")
+  set heading(numbering: "I.1.a.")
+  show heading : set text(hyphenate: false)
 
   // Config. of the spacing after headings
   show heading.where(level: 1): set block(spacing: 1em)
@@ -307,7 +308,8 @@
   // Bibliography configuration
   if (enableBibliography) {
     pagebreak()
-    show bibliography: set heading(numbering: "I.1.a)")
+    set par(justify: false)
+    show bibliography: set heading(numbering: "I.1.a.")
     bibliography("template/references.bib")
   }
 
